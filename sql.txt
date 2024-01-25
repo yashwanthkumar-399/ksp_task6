@@ -1,0 +1,30 @@
+CREATE DATABASE Okay;
+CREATE TABLE student (
+    id int,
+    name VARCHAR(50),
+    marks int,
+INSERT INTO student (id, name, marks) VALUES
+(1, 'yashwanth', 85),
+(2, 'kumar', 80),
+(3, 'vikarabad', 100);
+
+UPDATE student SET marks = 90 WHERE id = 1;
+
+DELETE FROM student WHERE id = 2;
+
+SELECT SUM(marks) AS total_marks FROM student;
+
+SELECT MIN(marks) AS min_marks FROM student;
+
+SELECT MAX(marks) AS max_marks FROM student;
+
+SELECT COUNT(*) AS total_students FROM student;
+
+
+
+
+
+
+
+
+
